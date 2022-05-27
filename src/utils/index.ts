@@ -92,6 +92,12 @@ export const useArray = <T>(initialArray: T[]) => {
   };
 };
 
+/**
+ * @description: 修改页面的title
+ * @param {string} title
+ * @param {*} keepOnUnmount
+ * @return {*}
+ */
 export const useDocumentTitle = (title: string, keepOnUnmount = true) => {
   const oldTitle = useRef(document.title).current;
   // 页面加载时: 旧title

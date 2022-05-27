@@ -37,7 +37,7 @@ export const AuthenticatedApp = () => {
           {/* <Navigate to={"/projects"} /> */}
           
         </Routes>
-        <Navigate to={"/projects"} />
+        {/* <Navigate to={"/projects"} /> */}
       </Main>
       <ProjectModal />
     </Container>

@@ -69,6 +69,11 @@ const undoReducer = <T>(state: State<T>, action: Action<T>) => {
   return state;
 };
 
+/**
+ * @description: 撤销操作的hook 时光倒流功能。讲解useReducer的好例子
+ * @param {T} initialPresent
+ * @return {*}
+ */
 export const useUndo = <T>(initialPresent: T) => {
   const [state, dispatch] = useReducer(undoReducer, {
     past: [],

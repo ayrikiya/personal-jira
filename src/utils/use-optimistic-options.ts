@@ -1,7 +1,19 @@
+/*
+ * @Author: 王荣
+ * @Date: 2021-04-11 20:34:00
+ * @LastEditors: 王荣
+ * @LastEditTime: 2022-02-25 15:08:29
+ * @Description: 填写简介
+ */
 import { QueryKey, useQueryClient } from "react-query";
 import { reorder } from "utils/reorder";
 import { Task } from "types/task";
 
+/**
+ * @description: 乐观更新 react-query统一hook
+ * @param {*}
+ * @return {*}
+ */
 export const useConfig = (
   queryKey: QueryKey,
   callback: (target: any, old?: any[]) => any[]
